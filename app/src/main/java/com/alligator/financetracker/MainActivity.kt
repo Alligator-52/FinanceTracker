@@ -27,6 +27,9 @@ class MainActivity : ComponentActivity() {
     @Composable
     fun DebtTracker(){
         var initialDebt by remember { mutableStateOf("") }
+        var totalDebt by remember { mutableStateOf(0.0) }
+        var amountPaid by remember { mutableStateOf("") }
+        var selectedDate by remember { mutableStateOf("") }
     }
 }
 
